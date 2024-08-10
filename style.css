@@ -92,21 +92,8 @@
     background-color: #E0E0E0;
 }
 
-.aretes-container{
-    background-image: linear-gradient(
-      rgba(149, 136, 136, 0.7),/*aclarar imagen*/
-      rgba(75, 72, 72, 0.7)),
-      url(Imagenes/bg.jpg);    
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100vh;
-    display: Flex;
-    align-items: center;  
-  }
-
 .aretes-txt h2 {
-    color: #000000;
+    color: #1B1725;
     font-size: 80px;
     text-align: center;
 }
@@ -212,12 +199,118 @@
     transform: perspective(600px) rotateY(360deg);
 }
     
-/*-----------------------------------------------------------*/
-/*-------Cadenas--------*/
-.cadenas-content{
+/*-------------------------Cadenas------------------------------*/
+/*------Cadenas------*/
+.cadenas-content {
     padding-top: 110px;
     min-height: 150vh;
     background-color: #534B62;
 }
 
-  
+.cadenas-txt h2 {
+    color: #efd4d4;
+    font-size: 80px;
+    text-align: center;
+}
+
+.cadenas-txt p {
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+}
+
+.cadenas {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(300px, auto);
+    gap: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    justify-content: center;
+}
+.font{
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400; /* Ajusta el peso según lo que necesites */
+    font-style: normal;
+}
+
+.card {
+    position: relative;
+    width: 100%; /* Usa el 100% del espacio disponible dentro de cada celda */
+    height: 350px;
+    }
+
+.card .face1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.5s;
+}
+    
+.card .front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #5a575e;
+}
+      
+.card .front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+    
+.card .front h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background-color: rgba(97, 96, 91, 0.5);
+    text-align: center;
+}
+    
+.card .back {
+    transform: perspective(600px) rotateY(180deg);
+    background: #A499B3; /*color fondo card*/
+    padding: 15px;
+    color: #FCF8F3; /*color letra*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+    
+.card .back .link {
+    border-top: solid 1px #EEEDEB; /*color linea*/
+    height: 50px;
+    line-height: 50px;
+}
+    
+.card .back .link a {
+    color: #EEEDEB; /*color link*/
+    text-decoration: none;
+}
+    
+.card .back h3 {
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+      
+.card .back p {
+    letter-spacing: 1px;
+}
+      
+.card:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+      
+.card:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+}
