@@ -4,77 +4,244 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><!-- Google fonts     -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="icon" href="Imagenes/icon.jpeg">
     <link rel="stylesheet" href="style.css">
     <title>Accesorios Frices</title>
 </head>
 
 <body>
-    <header>
-        <nav class="menu">
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="">Juegos</a></li>
-                <li><a href="">Cadenas</a></li>
-                <li><a href="#pulseras">Pulseras</a></li>
-                <li><a href="">Anillos</a></li>
-                <li><a href="">Aretes</a></li>
-            </ul>
-        </nav>
+    <header class="header" id="incio">
+
+        <section class="menu container">
+            <a href="#">Accesorios Frices</a>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#incio">Inicio</a></li>
+                    <li><a href="#aretes">Aretes</a></li>
+                    <li><a href="#cadenas">Cadenas</a></li>
+                    <li><a href="#pulseras">Pulseras</a></li>
+                    <li><a href="#juegos">Juegos</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="header-content container">
+            <div class="header-text">
+                <h1>JOYERÍA FINA: ELEGANCIA, CALIDAD Y PRECIO JUSTO</h1>
+                <p>Ofrecemos una exquisita selección de joyería fina, donde la elegancia y la alta
+                    calidad son nuestra prioridad, siempre a precios justos. Aquí encontrarás una variedad
+                    impresionante de joyas para cualquier ocasión, incluyendo aretes, dijes, gargantillas, anillos de
+                    moda y
+                    pulseras elaboradas en acero inoxidable y oro laminado.</p>
+            </div>
+        </section>
+
     </header>
 
-    <!--Este es un comentario-->
-    <h1 class="titulo">JOYERÍA FINA: ELEGANCIA, CALIDAD Y PRECIO JUSTO</h1>
+    <script type="text/javascript">
+        window.addEventListener("scroll", function () {
+            var section = document.querySelector("section");
+            section.classList.toggle("abajo", window.scrollY > 0)
+        })
+    </script>
 
-    <h3 id="nosotros" class="presentacion">Sobre nosotros</h3>
-    <p class="introduccion">
-        En Accesorios Frices, ofrecemos una exquisita selección de joyería fina, donde la elegancia y la alta calidad son nuestra prioridad, siempre a precios justos. En esta categoría, encontrarás una variedad impresionante de joyas para cualquier ocasión, incluyendo aretes, dijes, gargantillas, anillos de moda y pulseras elaboradas en acero inoxidable y oro laminado.
-    </p>
+    <main>
+        <section class="aretes-content container" id="aretes">
 
-    <hr>
-    <!-- Link de la web-->
-    <h3>COLECCIÓN DESTACADA</h3>
-    <section>
-    <div class="container">
-        <img class="inicial" src="https://scontent.ftgz3-1.fna.fbcdn.net/v/t39.30808-6/448748242_1219344682706129_8761822850868025889_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=n-QQ1Aa6T5IQ7kNvgGacIiv&_nc_ht=scontent.ftgz3-1.fna&oh=00_AYADiasR_xIdrkIF7xDu_wKUZWvPgQ62v9xWsDclvRih9Q&oe=669B2EE3" alt="Inicial acero inoxidable" width="200" height="300">
-    </div>
+            <section class="text">
+                <div class="aretes-txt">
+                    <h2>Aretes</h2>
+                    <p>En nuestra colección de aretes puedes encontrar gran variedad de aretes, broqueles, arracadas,
+                        huggies en
+                        diferentes materiales como oro laminado y acero inoxidable.</p>
+                </div>
+            </section>
 
-    <div class="container">
-        <!--Imagen local-->
-        <img class="cadena" src="Imagenes/Cadena.jpeg" alt="Cadena">
-    </div>
+            <section class="aretes container">
 
-    <div>
-        <!--Imagen local-->
-        <img class="juego" src="Imagenes/Juego.jpeg" alt="Juego">
-    </div>
-</section>
+                <article class="card">
+                    <div class="face front">
+                        <img src="Imagenes/arete1.jpeg" alt="arracada dorada">
+                        <h3 class="font">ARRACADAS</h3>
+                    </div>
+                    <div class="face back">
+                        <h3>Arracadas Gruesas</h3>
+                        <p>Material: Acero inoxidable</p>
+                        <p>Tamaño: 2 cm</p>
+                        <div class="link">
+                            <a href="https://www.instagram.com/accesorios._.frices?igsh=MXI4NHJ2b3RtOXd4ag=="
+                                target="_blank">Consulta el precio MD</a>
+                        </div>
+                    </div>
+                </article>
 
-    <!--Lista ordenada-->
-    <h3>¿Cómo Comprar?</h3>
-    <ol>
-        <li>Visita nuestra página de Instagram</li>
-        <li>Explora nuestros productos</li>
-        <li>Envíanos un mensaje directo con tu pedido</li>
-        <li>Realiza el pago</li>
-        <li>Recibe tu pedido en la puerta de tu casa</li>
-    </ol>
-    <br>
-    
-    
-    <br>
-    <div class="pulseras">
-        <h3 id="pulseras">Pulseras</h3>
-        <br>
-        <p>En nuestra colección de aretes puedes encontrar gran variedad de aretes, broqueles, arracadas, huggies en diferentes materiales como chapa de oro, acero inoxidable y plata.</p>
-    </div>
+                <article class="card">
+                    <div class="face front">
+                        <img src="Imagenes/arete2.jpeg" alt="arete cuadrado dorado">
+                        <h3 class="font">ARETES CUADRADOS</h3>
+                    </div>
+                    <div class="face back">
+                        <h3>Aretes cuadrados</h3>
+                        <p>Material: Acero inoxidable</p>
+                        <p>Tamaño: 2 cm</p>
+                        <div class="link">
+                            <a href="https://www.instagram.com/accesorios._.frices?igsh=MXI4NHJ2b3RtOXd4ag=="
+                                target="_blank">Consulta el precio MD</a>
+                        </div>
+                    </div>
+                </article>
 
-   
-    <br>
-    <a href="https://www.instagram.com/accesorios._.frices?igsh=MXI4NHJ2b3RtOXd4ag==" target="_blank">Visítanos en Instagram</a>
+                <article class="card">
+                    <div class="face front">
+                        <img src="Imagenes/arete3.jpeg" alt="arete codito">
+                        <h3 class="font">ARETES CODITO</h3>
+                    </div>
+                    <div class="face back">
+                        <h3>ARETES CODITO</h3>
+                        <p>Material: Acero inoxidable</p>
+                        <p>Tamaño: 2 cm</p>
+                        <div class="link">
+                            <a href="https://www.instagram.com/accesorios._.frices?igsh=MXI4NHJ2b3RtOXd4ag=="
+                                target="_blank">Consulta el precio MD</a>
+                        </div>
+                    </div>
+                </article>
 
-    <a href="https://www.facebook.com/profile.php?id=100038918276466&mibextid=ZbWKwL" target="_blank">Visítanos en Facebook</a>
+                <article class="card">
+                    <div class="face front">
+                        <img src="Imagenes/arete4.jpeg" alt="arete codito">
+                        <h3 class="font">ARRACADA GRUESA</h3>
+                    </div>
+                    <div class="face back">
+                        <h3>ARRACADA GRUESA</h3>
+                        <p>Material: Acero inoxidable</p>
+                        <p>Ancho: 1.7 cm</p>
+                        <p>Alto: 2 cm</p>
+                        <div class="link">
+                            <a href="https://www.instagram.com/accesorios._.frices?igsh=MXI4NHJ2b3RtOXd4ag=="
+                                target="_blank">Consulta el precio MD</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="face front">
+                        <img src="Imagenes/arete5.jpeg" alt="aretes">
+                        <h3 class="font">ARETES</h3>
+                    </div>
+                    <div class="face back">
+                        <h3>ARETES</h3>
+                        <p>Material: Acero inoxidable</p>
+                        <p>Tamaño: 2 cm</p>
+                        <div class="link">
+                            <a href="https://www.instagram.com/accesorios._.frices?igsh=MXI4NHJ2b3RtOXd4ag=="
+                                target="_blank">Consulta el precio MD</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="face front">
+                        <img src="Imagenes/arete6.jpeg" alt="arete codito">
+                        <h3 class="font">ARETES GEOMÉTRICOS</h3>
+                    </div>
+                    <div class="face back">
+                        <h3>ARETES GEOMÉTRICOS</h3>
+                        <p>Material: Acero inoxidable</p>
+                        <p>Tamaño: 2 cm</p>
+                        <div class="link">
+                            <a href="https://www.instagram.com/accesorios._.frices?igsh=MXI4NHJ2b3RtOXd4ag=="
+                                target="_blank">Consulta el precio MD</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="face front">
+                        <img src="Imagenes/arete7.jpeg" alt="arete codito">
+                        <h3 class="font">ARETES GOTITA</h3>
+                    </div>
+                    <div class="face back">
+                        <h3>ARETE GOTITA</h3>
+                        <p>Material: Acero inoxidable</p>
+                        <p>Tamaño: 2cm</p>
+                        <div class="link">
+                            <a href="https://www.instagram.com/accesorios._.frices?igsh=MXI4NHJ2b3RtOXd4ag=="
+                                target="_blank">Consulta el precio MD</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="face front">
+                        <img src="Imagenes/arete8.jpeg" alt="arete codito">
+                        <h3 class="font">ARRACADAS</h3>
+                    </div>
+                    <div class="face back">
+                        <h3>ARRACADAS</h3>
+                        <p>Material: Oro laminado</p>
+                        <p>Diámetro: 7 cm</p>
+                        <div class="link">
+                            <a href="https://www.instagram.com/accesorios._.frices?igsh=MXI4NHJ2b3RtOXd4ag=="
+                                target="_blank">Consulta el precio MD</a>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </section>
+
+        <section class="cadenas-content container" id="cadenas">
+
+            <section class="text">
+                <div class="cadenas-txt">
+                    <h2>Cadenas</h2>
+                    <p>En nuestra colección de cadenas, encontrarás una amplia variedad de estilos y diseños, que
+                        incluyen cadenas gruesas, delgadas, con dijes, y mucho más. Disponibles en materiales como oro
+                        laminado y acero inoxidable. </p>
+                </div>
+            </section>
+
+            <section class="cadenas container">
+                <article class="card">
+                    <div class="face front">
+                        <img src="Imagenes/arete1.jpeg" alt="arracada dorada">
+                        <h3 class="font">ARRACADAS</h3>
+                    </div>
+                    <div class="face back">
+                        <h3>Arracadas Gruesas</h3>
+                        <p>Material: Acero inoxidable</p>
+                        <p>Tamaño: 2 cm</p>
+                        <div class="link">
+                            <a href="https://www.instagram.com/accesorios._.frices?igsh=MXI4NHJ2b3RtOXd4ag=="
+                                target="_blank">Consulta el precio MD</a>
+                        </div>
+                    </div>
+                </article>
+
+            </section>
+
+        </section>
+
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Accesorios Frices. Todos los derechos reservados.</p>
+        <ul>
+            <li><a href="https://www.instagram.com/accesoriosfrices" target="_blank">Instagram</a></li>
+            <li><a href="https://www.facebook.com/accesoriosfrices" target="_blank">Facebook</a></li>
+        </ul>
+    </footer>
 </body>
+
 </html>
