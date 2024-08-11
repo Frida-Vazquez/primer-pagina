@@ -16,7 +16,13 @@
   p{
     font-family: Arial, Helvetica, sans-serif;
   }
-  
+
+  .font{
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400; /* Ajusta el peso según lo que necesites */
+    font-style: normal;
+}
   .container{
     max-width: 90%;
     margin: 0 auto;
@@ -113,13 +119,6 @@
     justify-content: center; /* Centra las columnas dentro del contenedor */
 }
 
-.font{
-    font-family: "Oswald", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400; /* Ajusta el peso según lo que necesites */
-    font-style: normal;
-}
-
 .card {
     position: relative;
     width: 100%; /* Usa el 100% del espacio disponible dentro de cada celda */
@@ -163,7 +162,7 @@
     transform: perspective(600px) rotateY(180deg);
     background: #A499B3; /*color fondo card*/
     padding: 15px;
-    color: #FCF8F3; /*color letra*/
+    color: #534B62; /*color letra*/
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -171,14 +170,15 @@
 }
     
 .card .back .link {
-    border-top: solid 1px #EEEDEB; /*color linea*/
+    border-top: solid 1px #D0BCD5; /*color linea*/
     height: 50px;
     line-height: 50px;
 }
     
 .card .back .link a {
-    color: #EEEDEB; /*color link*/
+    color: #534B62; /*color link*/
     text-decoration: none;
+    font-size: 20px;
 }
     
 .card .back h3 {
@@ -200,8 +200,7 @@
 }
     
 /*-------------------------Cadenas------------------------------*/
-/*------Cadenas------*/
-.cadenas-content {
+.cadenas-content{
     padding-top: 110px;
     min-height: 150vh;
     background-color: #534B62;
@@ -219,30 +218,24 @@
     text-align: center;
 }
 
-.cadenas {
+.cadenas{
     margin-top: 30px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: minmax(300px, auto);
+    grid-template-columns: repeat(4, 1fr); /* Ajustado a 1fr para mejor flexibilidad */
+    grid-auto-rows: minmax(300px, auto); /* Asegura un mínimo de 300px por fila */
     gap: 20px;
     padding: 10px;
     box-sizing: border-box;
-    justify-content: center;
-}
-.font{
-    font-family: "Oswald", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400; /* Ajusta el peso según lo que necesites */
-    font-style: normal;
+    justify-content: center; /* Centra las columnas dentro del contenedor */
 }
 
-.card {
+.card1 {
     position: relative;
     width: 100%; /* Usa el 100% del espacio disponible dentro de cada celda */
     height: 350px;
     }
 
-.card .face1 {
+.card1 .face {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -252,19 +245,19 @@
     transition: transform 0.5s;
 }
     
-.card .front {
+.card1 .front {
     transform: perspective(600px) rotateY(0deg);
-    box-shadow: 0 5px 10px #5a575e;
+    box-shadow: 0 5px 10px #747475;
 }
       
-.card .front img {
+.card1 .front img {
     position: absolute;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
     
-.card .front h3 {
+.card1 .front h3 {
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -275,42 +268,295 @@
     text-align: center;
 }
     
-.card .back {
+.card1 .back {
     transform: perspective(600px) rotateY(180deg);
-    background: #A499B3; /*color fondo card*/
+    background: #D0BCD5; /*color fondo card*/
     padding: 15px;
-    color: #FCF8F3; /*color letra*/
+    color: #534B62; /*color letra*/
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
 }
     
-.card .back .link {
-    border-top: solid 1px #EEEDEB; /*color linea*/
+.card1 .back .link {
+    border-top: solid 1px #fffeff; /*color linea*/
     height: 50px;
     line-height: 50px;
 }
     
-.card .back .link a {
-    color: #EEEDEB; /*color link*/
+.card1 .back .link a {
+    color: #534B62; /*color link*/
     text-decoration: none;
+    font-size: 20px;
 }
     
-.card .back h3 {
+.card1 .back h3 {
     font-size: 30px;
     margin-top: 20px;
     letter-spacing: 2px;
 }
       
-.card .back p {
+.card1 .back p {
     letter-spacing: 1px;
 }
       
-.card:hover .front {
+.card1:hover .front {
     transform: perspective(600px) rotateY(180deg);
 }
       
-.card:hover .back {
+.card1:hover .back {
     transform: perspective(600px) rotateY(360deg);
 }
+
+/*-------------------Pulseras--------------------*/
+.pulseras-content{
+    padding-top: 110px;
+    min-height: 150vh;
+    background-color: #534B62;
+}
+
+.pulseras-txt h2 {
+    color: #efd4d4;
+    font-size: 80px;
+    text-align: center;
+}
+
+.pulseras-txt p {
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+}
+
+.pulseras{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Ajustado a 1fr para mejor flexibilidad */
+    grid-auto-rows: minmax(300px, auto); /* Asegura un mínimo de 300px por fila */
+    gap: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    justify-content: center; /* Centra las columnas dentro del contenedor */
+}
+
+.card2 {
+    position: relative;
+    width: 100%; /* Usa el 100% del espacio disponible dentro de cada celda */
+    height: 350px;
+    }
+
+.card2 .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.5s;
+}
+    
+.card2 .front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #747475;
+}
+      
+.card2 .front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+    
+.card2 .front h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background-color: rgba(97, 96, 91, 0.5);
+    text-align: center;
+}
+    
+.card2 .back {
+    transform: perspective(600px) rotateY(180deg);
+    background: #D0BCD5; /*color fondo card*/
+    padding: 15px;
+    color: #534B62; /*color letra*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+    
+.card2 .back .link {
+    border-top: solid 1px #fffeff; /*color linea*/
+    height: 50px;
+    line-height: 50px;
+}
+    
+.card2 .back .link a {
+    color: #534B62; /*color link*/
+    text-decoration: none;
+    font-size: 20px;
+}
+    
+.card2 .back h3 {
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+      
+.card2 .back p {
+    letter-spacing: 1px;
+}
+      
+.card2:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+      
+.card2:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+}
+
+/*--------------------Juegos----------------------*/
+.juegos-content{
+    padding-top: 110px;
+    min-height: 150vh;
+    background-color: #534B62;
+}
+
+.juegos-txt h2 {
+    color: #efd4d4;
+    font-size: 80px;
+    text-align: center;
+}
+
+.juegos-txt p {
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+}
+
+.juegos{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Ajustado a 1fr para mejor flexibilidad */
+    grid-auto-rows: minmax(300px, auto); /* Asegura un mínimo de 300px por fila */
+    gap: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    justify-content: center; /* Centra las columnas dentro del contenedor */
+}
+
+.card3 {
+    position: relative;
+    width: 100%; /* Usa el 100% del espacio disponible dentro de cada celda */
+    height: 350px;
+    }
+
+.card3 .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.5s;
+}
+    
+.card3 .front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #747475;
+}
+      
+.card3 .front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+    
+.card3 .front h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background-color: rgba(97, 96, 91, 0.5);
+    text-align: center;
+}
+    
+.card3 .back {
+    transform: perspective(600px) rotateY(180deg);
+    background: #D0BCD5; /*color fondo card*/
+    padding: 15px;
+    color: #534B62; /*color letra*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+    
+.card3 .back .link {
+    border-top: solid 1px #fffeff; /*color linea*/
+    height: 50px;
+    line-height: 50px;
+}
+    
+.card3 .back .link a {
+    color: #534B62; /*color link*/
+    text-decoration: none;
+    font-size: 20px;
+}
+    
+.card3 .back h3 {
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+      
+.card3 .back p {
+    letter-spacing: 1px;
+}
+      
+.card3:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+      
+.card3:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+}
+
+/*---------------------footer--------------------*/
+.footer p{
+    padding-top: 110px;;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.footer ul {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 40px; 
+    width: 100%;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: #534B62; 
+}
+
+.footer ul li a:hover {
+    color: #1B1725;
+    transform: scale(1.1); 
+}
+
