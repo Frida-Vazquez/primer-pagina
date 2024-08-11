@@ -7,7 +7,7 @@
   }
   
   body{ /* Fuente*/
-    font-family: "Bebas Neue", sans-serif;/* Fuente*/
+    font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;  
     background-color: #E0E0E0;/* fondo de la pagina*/
@@ -22,6 +22,10 @@
     font-optical-sizing: auto;
     font-weight: 400; /* Ajusta el peso según lo que necesites */
     font-style: normal;
+}
+
+.titulo-accesorios {
+    color: #ffffff; /* Puedes cambiar el color al que desees */
 }
   .container{
     max-width: 90%;
