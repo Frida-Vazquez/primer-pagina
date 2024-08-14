@@ -51,6 +51,11 @@
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25); /* iluminacion menu*/
   } 
 
+  .logo{
+    color: hsl(20, 100%, 99%);/* hsl de color*/
+    font-size: 20px;  
+  }
+
   .menu .navbar ul li{
     position: relative;
     float: left;
@@ -69,8 +74,8 @@
 
   .header{
     background-image: linear-gradient(
-      rgba(149, 136, 136, 0.7),/*aclarar imagen*/
-      rgba(75, 72, 72, 0.7)),
+      rgba(43, 41, 41, 0.7),/*aclarar imagen*/
+      rgba(75, 72, 72, 0.9)),
       url(Imagenes/bg.jpg);    
     background-position: center center;
     background-repeat: no-repeat;
@@ -81,7 +86,7 @@
   }
 
 .header-content h1{
-    font-size: 95px;
+    font-size: 87px;
     line-height: 80px;
     color: #fefcfb;
     margin-top: 100px;
@@ -93,27 +98,29 @@
     font-size: 20px;    
     color: #ffffff;
     margin-bottom: 70px;
+    text-align: center;
 }
 
 /*------Aretes------*/
 .aretes-content{
-    padding-top: 110px;
-    min-height: 150vh;
-    background-color: #E0E0E0;
+    padding-top: 90px;
+    background-color: #FFDFD6;
 }
 
 .aretes-txt h2 {
-    color: #1B1725;
+    color: #694F8E;
     font-size: 80px;
     text-align: center;
 }
 
 .aretes-txt p{
     font-size: 20px;
+    color:#5f5f5d;
 }
 
 .aretes{
     margin-top: 30px;
+    margin-bottom: 70px;
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* Ajustado a 1fr para mejor flexibilidad */
     grid-auto-rows: minmax(300px, auto); /* Asegura un mínimo de 300px por fila */
@@ -166,7 +173,7 @@
     transform: perspective(600px) rotateY(180deg);
     background: #A499B3; /*color fondo card*/
     padding: 15px;
-    color: #534B62; /*color letra*/
+    color: #ffffff; /*color letra*/
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -180,7 +187,7 @@
 }
     
 .card .back .link a {
-    color: #534B62; /*color link*/
+    color: #ffffff; /*color link*/
     text-decoration: none;
     font-size: 20px;
 }
@@ -205,9 +212,8 @@
     
 /*-------------------------Cadenas------------------------------*/
 .cadenas-content{
-    padding-top: 110px;
-    min-height: 150vh;
-    background-color: #534B62;
+    padding-top: 90px;
+    background-color: #987D9A;
 }
 
 .cadenas-txt h2 {
@@ -217,13 +223,14 @@
 }
 
 .cadenas-txt p {
-    color: #ffffff;
+    color: #EEEDEB;
     font-size: 20px;
     text-align: center;
 }
 
 .cadenas{
     margin-top: 30px;
+    margin-bottom: 50px;
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* Ajustado a 1fr para mejor flexibilidad */
     grid-auto-rows: minmax(300px, auto); /* Asegura un mínimo de 300px por fila */
@@ -274,7 +281,7 @@
     
 .card1 .back {
     transform: perspective(600px) rotateY(180deg);
-    background: #D0BCD5; /*color fondo card*/
+    background: #EECEB9; /*color fondo card*/
     padding: 15px;
     color: #534B62; /*color letra*/
     display: flex;
@@ -284,7 +291,7 @@
 }
     
 .card1 .back .link {
-    border-top: solid 1px #fffeff; /*color linea*/
+    border-top: solid 1px #694F8E; /*color linea*/
     height: 50px;
     line-height: 50px;
 }
@@ -315,25 +322,25 @@
 
 /*-------------------Pulseras--------------------*/
 .pulseras-content{
-    padding-top: 110px;
-    min-height: 150vh;
-    background-color: #534B62;
+    padding-top: 90px;
+    background-color: #FFDFD6;
 }
 
 .pulseras-txt h2 {
-    color: #efd4d4;
+    color: #694F8E;
     font-size: 80px;
     text-align: center;
 }
 
 .pulseras-txt p {
-    color: #ffffff;
+    color: #939185;
     font-size: 20px;
     text-align: center;
 }
 
 .pulseras{
     margin-top: 30px;
+    margin-bottom: 50px;
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* Ajustado a 1fr para mejor flexibilidad */
     grid-auto-rows: minmax(300px, auto); /* Asegura un mínimo de 300px por fila */
@@ -425,9 +432,8 @@
 
 /*--------------------Juegos----------------------*/
 .juegos-content{
-    padding-top: 110px;
-    min-height: 150vh;
-    background-color: #534B62;
+    padding-top: 90px;
+    background-color: #987D9A;
 }
 
 .juegos-txt h2 {
@@ -437,13 +443,14 @@
 }
 
 .juegos-txt p {
-    color: #ffffff;
+    color: #EEEDEB;
     font-size: 20px;
     text-align: center;
 }
 
 .juegos{
     margin-top: 30px;
+    margin-bottom: 50px;
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* Ajustado a 1fr para mejor flexibilidad */
     grid-auto-rows: minmax(300px, auto); /* Asegura un mínimo de 300px por fila */
@@ -494,7 +501,7 @@
     
 .card3 .back {
     transform: perspective(600px) rotateY(180deg);
-    background: #D0BCD5; /*color fondo card*/
+    background: #EECEB9; /*color fondo card*/
     padding: 15px;
     color: #534B62; /*color letra*/
     display: flex;
@@ -533,9 +540,35 @@
     transform: perspective(600px) rotateY(360deg);
 }
 
+/*---------------------dinamica--------------------*/
+.dinamica-content{
+    padding-top: 90px;
+    min-height: 50vh;
+    background-color: #FFDFD6;
+}
+
+.dinamica-txt h2 {
+    color: #694F8E;
+    font-size: 80px;
+    text-align: center;
+}
+
+.dinamica-txt p {
+    color: #000000;
+    font-size: 20px;
+    text-align: center;
+}
+
+.lista ol li{
+    color: #987D9A;
+    font-size: 20px;
+    text-align: center;
+
+}
+
 /*---------------------footer--------------------*/
 .footer p{
-    padding-top: 110px;;
+    padding-top: 70px;;
     display: flex;
     justify-content: center; 
     align-items: center; 
